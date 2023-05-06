@@ -1,4 +1,4 @@
-package creational_design_patterns.factory_method.concrete_factory;
+package creational_design_patterns.factory_method.concrete_creator;
 
 import creational_design_patterns.factory_method.concrete_product.Ice_Asteroids;
 import creational_design_patterns.factory_method.concrete_product.Iron_Asteroids;
