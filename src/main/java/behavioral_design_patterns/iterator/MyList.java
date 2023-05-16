@@ -16,12 +16,11 @@ public class MyList <T>{
         Node<T> newNode = new Node<>(data);
         if(head == null){
             head = newNode;
-            tail = newNode;
         }
         else{
             tail.next = newNode;
-            tail = newNode;
         }
+        tail = newNode;
     }
 
     public MyIterator<T> iterator(){
@@ -32,8 +31,8 @@ public class MyList <T>{
 
         private Node<T> currentNode;
 
-        public MyListIterator(Node<T> head){
-            currentNode = head;
+        public MyListIterator(Node<T> node){
+            currentNode = node;
         }
 
         @Override
